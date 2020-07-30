@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
+	*{
+		font-family: 'Alata', sans-serif;
+    }
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-color: #fff;
+    }
+    #section1 {
+        background-color: #DEF2F1;
+        text-align: center;
+    }
+	#section0 h1{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+	#section-three{
+		text-align: center;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+    .fp-tableCell {
+        vertical-align: top;
+    }
+    .base-color {
+        background-color: #3AAFA9;
+    }
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#section2 {
+		background-color: #3AAFA9;
+        max-height: 100vh;
+        width: auto;
+        overflow-y: hidden; // hide vertical
+        
+    }
+    .cover {
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap; 
+        overflow: scroll;
+    }
+    
+    /* text sizes & colors */
+
+    .intro-txt {
+        text-align: center;
+        font-size: 48px;
+        color: #17242A;
+        margin-top: 260px;
+    }
+
+    /* logo box & text */
+    .logo-box {
+        width: 110px;
+        height: 110px;
+        border: 5px solid #3AAFA9;
+        text-align: center;
+        display: inline-flex;
+        -webkit-transition: background-color .5s ease-out;
+        -moz-transition: background-color .5s ease-out;
+        -o-transition: background-color .5s ease-out;
+        transition: background-color .5s ease-out;
+    }
+    .pad {
+        position: absolute;
+        margin: 70px;
+        margin-bottom: 0;
+    }
+    #logo-txt {
+        font-size: 50px;
+        margin: 10px auto;
+        color: #17242A;
+        font-family: helvetica;
+    }
+    .logo-box:hover #logo-txt {
+        color: #FEFFFF;
+    }
+    .logo-box:hover {
+        background-color: #17242A;
+    }
+    .headertekst {
+        color: #DEF2F1;
+        font-size: 40px;
+        margin-left: 100px;
+    }
+    .link-box {
+        width: 110px;
+        height: 110px;
+        background-color: #DEF2F1;
+        display: block;
+        opacity: 0;
+    }
+    .link-box-img{
+        width: 70%;
+        padding-top: 30px;
+        padding-left: 30px;
+        transition-duration: .2s;
+    }
+    .link-box:hover .link-box-img {
+        transform: scale(1.1);
+    }
+    /* section 1 */
+
+    #header-section1{
+        padding-top: 50px;
+        font-size: 4em;
+        color: #17242A;
+    }
+    .images-sec {
+        position: absolute;
+        width: 8%;
+        left: 60px;
+        top: 40px;
+    }
+    .images-fir {
+        position: absolute;
+        right: 40px;
+        bottom: 70px;
+        width: 10%;
+    }
+    .info-sec1 {
+        padding-top: 100px;
+        font-size: 3em;
+    }
+    .framework-list {
+        width: 150px;
+        margin: 30px auto;
+        text-align: left;
+    }
+    .framework-list > li
+    {
+        height: 40px;
+    }
+    .framework-list > li:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    .icon {
+        width: 30%;
+        float: right;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .work-img {
+        width: 7%;
+        position: absolute;
+        right: 300px;
+        top: 20px;
+    }
+    .work-img-two {
+        width: 7%;
+        position: absolute;
+        right: 470px;
+        top: 50px;
+    }
+
+    /* card */
+    
+    .card {
+        width: 650px;
+        height: 580px;
+        flex: 0 0 auto;
+        margin: 15vh 5%;
+        background-color: #DEF2F1;
+    }
+    .devider {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .date-provider {
+        margin: 200px 132px;
+        font-size: 36px;
+        color: #3AAFA9;
+        width: 100px;
+        height: 150px;
+        padding-left: 15px;
+        position: sticky;
+        z-index: 2;
+        opacity: 0;
+        border: 5px solid #3AAFA9;
+        transition: ease-in;
+        transition: .2s;
+    }
+    .info-field {
+        margin-top: -50%;
+        height: 100%;
+        position: sticky;
+        z-index: 2;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 50%;
+        float: right;
+        text-align: center;
+    }
+    .but-visit {
+        width: 40%;
+        height: 40px;
+        border: 3px solid #3AAFA9;
+        font-size: 15px;
+        background-color: #DEF2F1;
+        transition: ease-in;
+        transition: .3s;
+    }
+    .but-visit:hover {
+        background-color: #3AAFA9;
+        color: #DEF2F1;
+    }
+    /* card image animation */
+
+    .card-img-ani {
+        // overflow: hidden;
+        margin-top: -550px;
+        position: relative;
+        object-fit: fill;
+        transition-timing-function: ease-in;
+        transition: .5s;
+    }
+    .card-img-ani:hover {
+        transform: rotate(10deg) scale(1.3);
+        filter: blur(5px);
+    }
+
+    // skills page
+
+    .skill-con {
+        padding-top: 100px;
+        margin-left: 100px;
+        width: auto;
+        height: auto;
+    }
+
+    .container {
+        width: 100%;
+        background-color: #ddd;
+      }
+      .line {
+        border: 5px solid #3AAFA9;
+        width: 60%;
+      }
+      
+      .skills {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+      }
+      
+      .size-icon {
+          width: 10%;
+          margin: 50px;
+      }
+      .first-icon {
+        //   padding-right: 400px;
+        //   padding-top: -970px;
+      }
+      .sec-icon {
+          padding-right: -420px;
+          padding-top: 50px;
+      }
+      .third-icon {
+        //   padding-top: -100px;
+        //   padding-right: 200px;
+        //   width: 15%;
+      }
+      .four-icon {
+          padding-top: 10px;
+          padding-left: 20px;
+      }
+
+      .html {width: 90%; background-color: #3AAFA9;}
+      .css {width: 60%; background-color: #3AAFA9;}
+      .js {width: 70%; background-color: #3AAFA9;}
+      .php {width: 40%; background-color: #3AAFA9;}
+
+    /* project lang */
+
+    /* .project-lang {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 300px 300px;
+        position: absolute;
+        bottom: 0px;
+        right: 200vw;
+        border-color: transparent transparent #DEF2F1 transparent;
+    } */
+
+    /* FLOATING ANIMATION */
+
+    .floating {
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes floating {
+        from { transform: translate(0,  0px); }
+        65%  { transform: translate(0, 15px); }
+        to   { transform: translate(0, -0px); }    
+    }
+    .floating2 {
+        animation-name: floating;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes floating {
+        from { transform: translate(0,  0px); }
+        65%  { transform: translate(1px, 12px); }
+        to   { transform: translate(0, -0px); }    
+    }
+    .floating3 {
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes floating {
+        from { transform: translate(0,  0px); }
+        65%  { transform: translate(0, 8px); }
+        to   { transform: translate(0, -0px); }    
+    }
+
+
+    /* section 1 svg's */
+    .img-wrapper {
+        padding-left: 10%;
+    }
+
+
+    #www-svg {
+        width: 120px;
+        margin-left: 10px;
+        margin-bottom: 170px;
+    }
+
+    #pc-svg {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    #phone-svg {
+        width: 70px;
+        margin-bottom: 30px;
+        margin-left: 500px;
+    }
+    #books-svg {
+        width: 100px;
+        margin-bottom: 35px;
+    }
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
